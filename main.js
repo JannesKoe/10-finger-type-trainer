@@ -44,14 +44,14 @@ function manytexts() { //text will get from there
     "I scream, you scream, we all scream for ice cream",
     "I saw Susie sitting in a shoeshine shop",
     "Susie works in a shoeshine shop. Where she shines she sits, and where she sits she shines",
-    "Fuzzy Wuzzy was a bear. Fuzzy Wuzzy had no hair. Fuzzy Wuzzy wasn’t fuzzy, was he?",
+    "Fuzzy Wuzzy was a bear. Fuzzy Wuzzy had no hair. Fuzzy Wuzzy wasn't fuzzy, was he?",
     "Can you can a can as a canner can can a can?",
     "I have got a date at a quarter to eight; I'll see you at the gate, so don't be late",
     "You know New York, you need New York, you know you need unique New York",
     "Saw a kitten eating chicken in the kitchen",
     "If a dog chews shoes, whose shoes does he choose?",
     "I thought I thought of thinking of thanking you",
-    "Peter Piper picked a peck of pickled peppers. A peck of pickled peppers Peter Piper picked. If Peter Piper picked a peck of pickled peppers? Where’s the peck of pickled peppers Peter Piper picked?",
+    "Peter Piper picked a peck of pickled peppers. A peck of pickled peppers Peter Piper picked. If Peter Piper picked a peck of pickled peppers? Where's the peck of pickled peppers Peter Piper picked?",
     "I slit the sheet, the sheet I slit, and on the slitted sheet I sit",
     "Good blood, bad blood"
     ];
