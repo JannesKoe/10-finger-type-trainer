@@ -2,7 +2,7 @@ manytexts() //call function manytexts()
 highlight(0) //call function highlight() to highlight the first letter
 
 let wrong = 0; //Definition for wrong
-document.getElementById("wrongtyping").innerHTML = "wrong: " + wrong; //wrong output at the beginning
+document.getElementById("wrongtyping").innerHTML = "Wrong: " + wrong; //wrong output at the beginning
 let position = 0; // letter position
 
 function input() {
@@ -18,7 +18,7 @@ function input() {
     } else { //if  the input isn't the same as the letter    
         highlight(position) //highlight call again with the old position
         wrong += 1; //wrong get add +1
-        wrongtyping.innerHTML = "wrong: " + wrong; //wrong will updatet in the html
+        wrongtyping.innerHTML = "Wrong: " + wrong; //wrong will updatet in the html
         setTimeout(clearInput, 0); //call function highlight with the new position
     }
 
