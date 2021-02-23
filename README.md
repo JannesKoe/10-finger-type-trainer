@@ -1,2 +1,2 @@
 # 10-finger-type-trainer
-10 finger trainer for qwertz, qwerty
+Just a very basic Javascript typetrainer for the web.
