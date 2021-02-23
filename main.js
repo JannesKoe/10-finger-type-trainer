@@ -4,8 +4,6 @@ highlight(0) //call function highlight() to highlight the first letter
 let wrong = 0; //Definition for wrong
 let position = 0; //Definition for current position in text
 document.getElementById("wrongtyping").innerHTML = "Wrong: " + wrong; //wrong output at the beginning
-let minutecache = new Date().getMinutes(); //Defines the last minute
-
 
 function input() {
 
@@ -20,7 +18,7 @@ function input() {
         setTimeout(clearInput, 0); //to clear the input, without it wouldn't work
     } else { //if  the input isn't the same as the letter    
         highlight(position) //highlight call again with the old position
-        wrong += 1; //wrong get add +1
+        wrong++; //wrong get add +1
         wrongtyping.innerHTML = "wrong: " + wrong; //wrong will updatet in the html
         setTimeout(clearInput, 0); //call function highlight with the new position
     }
@@ -58,19 +56,15 @@ function manytexts() { //text will get from there
     "I slit the sheet, the sheet I slit, and on the slitted sheet I sit.",
     "Good blood, bad blood."
     ];
-    //all defintion of the textes at the momen
-    let rdm = Math.round(Math.random() * (texts.length - 1)); //random Number for a random row of textes
-    textoutput = texts[rdm];
-
-    let box = document.getElementById("box");
-
-    box.innerHTML = textoutput; //text output in the text
+    //all defintion of the textes at the moment
+    textoutput = texts[Math.round(Math.random() * (texts.length - 1))];//random Number for a random text form the texts array
+    
+    document.getElementById("box").innerHTML = textoutput; //text output in the text
 
 } //end of the manytexts
 
 //Maybe dont work cause nothing call it
 //or wrong style in span
-
 //highlight the letters
 
 function highlight(index) {
@@ -84,5 +78,3 @@ function highlight(index) {
 }
 
 //to color the background of the text type "background-color:" for the text "color:"
-
-//Maybe dont work cause nothing call it
