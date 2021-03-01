@@ -53,8 +53,7 @@ function manytexts() { //text will get from there
     "If a dog chews shoes, whose shoes does he choose?",
     "I thought I thought of thinking of thanking you.",
     "Peter Piper picked a peck of pickled peppers. A peck of pickled peppers Peter Piper picked. If Peter Piper picked a peck of pickled peppers? Where's the peck of pickled peppers Peter Piper picked?",
-    "I slit the sheet, the sheet I slit, and on the slitted sheet I sit.",
-    "Good blood, bad blood."
+    "I slit the sheet, the sheet I slit, and on the slitted sheet I sit."
     ];
     //all defintion of the textes at the moment
     textoutput = texts[Math.round(Math.random() * (texts.length - 1))];//random Number for a random text form the texts array
