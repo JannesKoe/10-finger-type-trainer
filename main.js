@@ -56,7 +56,7 @@ function manytexts() {
     "I slit the sheet, the sheet I slit, and on the slitted sheet I sit.",
     "Good blood, bad blood."
     ];
-    textoutput = texts[rdm];
+    textoutput = texts[Math.random() * (texts.length - 1)];
 
     let box = document.getElementById("box");
 
