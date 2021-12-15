@@ -69,7 +69,7 @@ function manytexts() {
 }
 
 function highlight(index) {
-     var text = $("#box").text(); //get the id from html
+     var text = textoutput; //get the id from html
      if (text[index] == " ") {
           text = text.substr(0, index) + "<span style='color: aqua'>" + "_" + "</span>" + text.substr(index + 1, text.length);
           $("#box").html(text);
