@@ -55,9 +55,10 @@ function input(key) {
 
      if (position >= textoutput.length) {
           position = 0;
+          wrong = 0;
+          wrongtyping.innerHTML = `Wrong: ${wrong}`;
           setTimeout(manytexts, 0);
           alert("Finish")
-          wrong = 0;
      }
 }
 
