@@ -13,7 +13,8 @@ const texts = [
      "I thought I thought of thinking of thanking you.",
      "Peter Piper picked a peck of pickled peppers. A peck of pickled peppers Peter Piper picked. If Peter Piper picked a peck of pickled peppers? Where's the peck of pickled peppers Peter Piper picked?",
      "I slit the sheet, the sheet I slit, and on the slitted sheet I sit.",
-     "Good blood, bad blood."
+     "Good blood, bad blood." 
+     "I shitted in my pants! Ooooooooooh! I am for real!"
 ];
 document.addEventListener("keydown", (event) => {
      switch (event.key){
