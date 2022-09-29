@@ -25,6 +25,34 @@ document.addEventListener("keydown", (event) => {
           case 'ArrowRight':
           case 'ArrowLeft':
           case 'ArrowDown':
+          case 'F1':
+          case 'F2':
+          case 'F3':
+          case 'F4':
+          case 'F5':
+          case 'F6':
+          case 'F7':
+          case 'F8':
+          case 'F9':
+          case 'F10':
+          case 'F11':
+          case 'F12':
+          case 'Delete':
+          case 'Insert':
+          case 'Home':
+          case 'PageUp':
+          case 'PageDown':
+          case 'End':
+          case 'Dead':
+          case '<':
+          case '>':
+          case '|':
+          case 'AltGraph':
+          case 'Escape':
+          case 'ScrollLock':
+          case 'Pause':
+          case 'OS':
+          case 'Alt':
           return;
      }
      input(event.key);
