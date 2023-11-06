@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" content>
+        <title>anime.js test</title>
+    </head>
+    <script src="anime.min.js"></script>
+    <style>
+        body{
+            background-color: rgb(20, 20, 20);
+            height: 100vh;
+            overflow: hidden;
+            margin: 0px;
+        }
+        
+        #tiles{
+            height:100vh;
+            width:100vw;
+
+            display: grid;
+            grid-template-columns: repeat(var(--columns), 1fr);
+            grid-template-rows: repeat(var(--rows), 1fr);
+        }
+
+        .tile {
+            outline: 1px solid white
+        }
+    </style>
+    <body>
+        <div id="tiles"></div>
+    </body>
+    <script>
+        const wrapper = document.getElementById("tiles");
+        let columns = Math.floor(document.body.clientWidth / 50); //used to calculate the amount of grids (1 = grid = 50px)
+        let rows=Math.floor(document.body.clientHeight / 50);
+
+        const colors = [
+            "rgb(4, 199, 40)",
+            "rgb(22, 61, 201)",
+            "rgb(224, 56, 9)",
+            "rgb(19, 108, 143)",
+            "rgb(219, 18, 219)"
+        ];
+
+        let count = -1;
+
+        const handleOnClick = index => {
+            count = count + 1;
+
+
+            anime({
+                targets: ".tile",
+                backgroundColor: colors[count % (colors.length - 1)], //switch through all colors
+                delay: anime.stagger(50, {
+                    grid: [columns, rows],
+                    from: index
+                }) 
+            })
+        }
+
+        const createTile = index => {
+            const tile = document.createElement('div');
+            
+            tile.classList.add('tile');
+
+            tile.onclick = e => handleOnClick(index)
+
+            return tile;
+        }
+
+        const createTiles = quantity => {
+            Array.from(Array(quantity)).map((tile, index) => {
+                wrapper.appendChild(createTile(index));
+            })
+        }
+
+        const createGrid = () => {
+            wrapper.innerHTML = "";
+
+            columns=Math.floor(document.body.clientWidth / 50);
+            rows=Math.floor(document.body.clientHeight / 50);
+
+
+            wrapper.style.setProperty("--columns", columns); //used to get the correct number of tiles | get called in css with = repeat(var(-columns), fr1) | fr1 = fraction which are needed in the area
+            wrapper.style.setProperty("--rows", rows);
+
+            createTiles(columns * rows);
+        }
+
+        createGrid();
+        createTiles(columns * rows);
+
+        window.onresize = () => createGrid();
+    </script>
+</html>
