@@ -1,3 +1,8 @@
+var textoutput = '';
+let wrong = 0;
+let position = 0;
+document.getElementById("wrongtyping").innerHTML = "Wrong: " + wrong;
+
 const texts = [
      "He sells seashells by the seashore.",
      "How can a clam cram in a clean cream can?",
@@ -61,11 +66,6 @@ document.addEventListener("keydown", (event) => {
 
 manytexts()
 highlight(0)
-
-var textoutput = '';
-let wrong = 0;
-let position = 0;
-document.getElementById("wrongtyping").innerHTML = "Wrong: " + wrong;
 
 
 function input(key) {
