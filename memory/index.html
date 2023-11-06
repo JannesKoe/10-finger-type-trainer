@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="anime.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Memory</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="body">
+
+    <!-- backgroundcolor changer -->
+    <span style="position: absolute;">
+        <span><input type="range" id="myRange" oninput="changecolor();"></span>
+        <br>
+        <span><input type="color" id="ColorLeft" oninput="changecolor('left');"></span>
+        <span><input type="color" id="ColorRight" oninput="changecolor('right');"></span>
+    </span>
+
+        <header class="center">
+            <h1>Memory</h1>
+            <h2 id="points">Punkte: 0</h2>
+            <h2 id="try">Versuche: 0</h2>
+            <h2 id="highscore">Highscore: 0 <span>Best Time: 0</span></h2>
+            <h2 id="timer">Timer: 0</h2>
+            <select name="size" id="boardsize">
+                <option onclick="createboard();" value="4">4 x 4 Feld</option>
+                <option onclick="createboard();" value="6">6 x 6 Feld</option>
+            </select>
+            <nav style="margin: 0 auto;">
+                <span style="display: inline-block;">
+                <div id="tiles" class="grid"></div>
+                </span>
+            </nav>
+            <button onclick="resetbutton()">reset/restart</button>
+            <button id="tipp" onclick="tipp()">tipp 💡 0/3</button>
+        </header>
+</body>
+<script src="main.js"></script>
+
+</html>
