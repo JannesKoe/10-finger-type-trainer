@@ -49,11 +49,11 @@ function createboard() {
         switch (num[i]) {
             case 0:
             case 1:
-                box.style.background = "url('img/cracker.png')";
+                box.style.background = "url('img/Cracker.png')";
                 break;
             case 2:
             case 3:
-                box.style.background = "url('img/cookie.png')";
+                box.style.background = "url('img/Cookie.png')";
                 break;
             case 4:
             case 5:
